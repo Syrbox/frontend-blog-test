@@ -1,0 +1,21 @@
+.navbar-nav {
+  gap: 2rem;
+}
+.nav-item {
+  font-weight: bold;
+}
+
+.navbar-brand {
+  color: #506690;
+  size: 17px;
+  line-height: 25.9px;
+  margin: 0;
+
+  &.is-active {
+    color: #335eea;
+  }
+}
+
+.collapse {
+  flex-grow: 0;
+}

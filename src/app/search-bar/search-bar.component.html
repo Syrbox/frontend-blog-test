@@ -1,0 +1,9 @@
+<div class="searchbar-container">
+  <i class="searchbar-icon bi bi-search"></i>
+  <input id="typeahead-basic" type="text" class="form-control searchbar-input" [(ngModel)]="model"
+    [ngbTypeahead]="search" placeholder="Search" />
+  <div class="searchbar-align-right d-none d-md-block">
+    <span class="results">123 RESULTS</span>
+    <button type="button" class="btn btn-primary">Search</button>
+  </div>
+</div>

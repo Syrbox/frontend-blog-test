@@ -1,0 +1,70 @@
+.card {
+  border: none;
+  &-badge-container {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100%;
+
+    .favorite-btn {
+      border: none;
+      background: none;
+      transition: all 200ms ease-in-out;
+      i {
+        background: #b4c2d3;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      &:hover {
+        transform: scale(1.2);
+        .bi-star-fill {
+          background: linear-gradient(43.15deg, #ffc726 3.03%, #f99716 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+  }
+  &-img-top {
+    clip-path: ellipse(130% 80% at 15% 20%);
+  }
+  &-body {
+    padding: 2rem;
+  }
+  &-footer {
+    background-color: white;
+    border: none;
+    position: relative;
+    padding: 1rem 2rem 2rem;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 14.06px;
+    letter-spacing: 0.07em;
+    color: #6b7c93;
+
+    &::before {
+      position: absolute;
+      content: "";
+      border-bottom: 1px solid #d2d7da;
+      width: 85%;
+      transform: translateX(-50%);
+      top: 0;
+      left: 50%;
+    }
+
+    &-profile {
+      gap: 1rem;
+      img {
+        height: 24px;
+        width: 24px;
+        clip-path: circle(50%);
+      }
+    }
+  }
+}

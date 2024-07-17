@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container justify-content-between">
+    <a [routerLink]="['/']" aria-label="Home">
+      <img src="/assets/Logo.png" alt="landkit logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="navbar-brand icon-link icon-link-hover hover-up" [routerLink]="['/favorites']"
+            [routerLinkActive]="['is-active']">
+            Favorites
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand icon-link icon-link-hover hover-up" [routerLink]="['/']"
+            [routerLinkActive]="['is-active']" [routerLinkActiveOptions]="{ exact: true }">
+            Articles
+          </a>
+        </li>
+        <li class="nav-item d-block d-lg-none">
+          <a class="navbar-brand icon-link icon-link-hover hover-up" href="/favorites">
+            Login
+          </a>
+        </li>
+      </ul>
+    </div>
+    <li class="nav-item d-none d-lg-block">
+      <a class="navbar-brand icon-link icon-link-hover hover-up" href="/favorites">
+        Login
+      </a>
+    </li>
+  </div>
+</nav>
