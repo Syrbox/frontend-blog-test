@@ -9,7 +9,7 @@ export class BlogService {
   constructor(private http: HttpClient) {}
 
   getBlogList(): Observable<any> {
-    return this.http.get(
+    return this.http.get<Response>(
       "https://my-json-server.typicode.com/Syrbox/frontend-blog-test/blogs"
     );
   }

@@ -1,6 +1,6 @@
-<app-search-bar></app-search-bar>
+<app-search-bar (searchEvent)="filterList($event)"></app-search-bar>
 <div class="blog-list">
-  <app-blog *ngFor="let blog of blogs"></app-blog>
+  <app-blog *ngFor="let blog of filteredBlogs" [blog]="blog"></app-blog>
 </div>
 <div class="py-3 d-flex justify-content-center">
   <button type="button" class="btn btn-outline-primary load-more"><span>Load more</span><i

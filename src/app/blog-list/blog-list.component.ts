@@ -14,12 +14,21 @@ import { response } from "express";
 })
 export class BlogListComponent implements OnInit {
   constructor(private blogService: BlogService) {}
+  blogs: any = [];
+  filteredBlogs: any = [];
   ngOnInit(): void {
     this.blogService.getBlogList().subscribe((response) => {
-      alert(JSON.stringify(response));
+      this.blogs = response;
+      this.filteredBlogs = this.blogs;
     });
   }
 
-  //remove
-  blogs = ["", "", "", ""];
+  filterList(event: any) {
+    console.log(event);
+    this.filteredBlogs = this.blogs.filter((v: any) => {
+      console.log(event.toLowerCase());
+      console.log(v.title.toLowerCase());
+      return v.title.toLowerCase().includes(event.toLowerCase());
+    });
+  }
 }
