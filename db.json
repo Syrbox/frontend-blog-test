@@ -1,8 +1,33 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
+  "blogs": [
+    {
+      "title": "Introduction to JavaScript",
+      "content": "JavaScript is a versatile programming language used for web development...",
+      "owner": "John Doe",
+      "image": "https://example.com/images/js-intro.jpg",
+      "favorite": true
+    },
+    {
+      "title": "Understanding CSS Grid",
+      "content": "CSS Grid Layout is a two-dimensional layout system for the web...",
+      "owner": "Jane Smith",
+      "image": "https://example.com/images/css-grid.jpg",
+      "favorite": false
+    },
+    {
+      "title": "Mastering Ruby on Rails",
+      "content": "Ruby on Rails is a powerful web application framework...",
+      "owner": "Alice Johnson",
+      "image": "https://example.com/images/rails.jpg",
+      "favorite": true
+    },
+    {
+      "title": "Frontend Development with React",
+      "content": "React is a popular JavaScript library for building user interfaces...",
+      "owner": "Bob Brown",
+      "image": "https://example.com/images/react.jpg",
+      "favorite": false
+    }
   ],
   "comments": [
     { "id": 1, "body": "some comment", "postId": 1 },
